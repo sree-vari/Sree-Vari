@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Works | Sri Vari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-box">
+        <img src="logo.png" class="logo">
+        <h1>Sree Vari</h1>
+        <p>Electricals • Constructions • Elevators • Interior Designing</p>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">⬅ Back to Home</a>
+</nav>
+
+
+<!-- ================= CONSTRUCTION GALLERY ================= -->
+
+<section class="section">
+    <h2 class="title">Our Construction Works</h2>
+
+    <div class="gallery">
+
+        <img src="construction/c1.jpeg">
+        <img src="construction/c2.jpeg">
+        <img src="construction/c3.jpeg">
+        <img src="construction/c4.jpeg">
+        <img src="construction/c5.jpeg">
+        <img src="construction/c6.jpeg">
+        <img src="construction/c7.jpeg">
+        <img src="construction/c8.jpeg">
+        <img src="construction/c9.jpeg">
+        <img src="construction/c10.jpeg">
+        <img src="construction/c11.jpeg">
+        <img src="construction/c12.jpeg">
+        <img src="construction/c13.jpeg">
+        <img src="construction/c14.jpeg">
+        <img src="construction/c15.jpeg">
+        <img src="construction/c16.jpeg">
+        <img src="construction/c17.jpeg">
+        <img src="construction/c18.jpeg">
+        <img src="construction/c19.jpeg">
+        <img src="construction/c20.jpeg">
+        <img src="construction/c21.jpeg">
+        <img src="construction/c22.jpeg">
+        <img src="construction/c23.jpeg">
+        <img src="construction/c24.jpeg">
+        <img src="construction/c25.jpeg">
+        <img src="construction/c26.jpeg">
+
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Sri Vari Electricals
+</footer>
+<!-- ================= VIDEOS ================= -->
+
+<section class="section">
+    <h2 class="title">Work Videos</h2>
+
+    <div class="video-grid">
+
+        <video controls muted controlsList="nodownload noplaybackrate noremoteplayback">
+            <source src="construction/c1.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- ===== Image Popup (same as interior) ===== -->
+
+<div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <img class="popup-img" id="popupImg">
+</div>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const popup = document.getElementById("popup");
+const popupImg = document.getElementById("popupImg");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+    img.onclick = () => {
+        popup.style.display = "flex";
+        popupImg.src = img.src;
+    }
+});
+
+closeBtn.onclick = () => popup.style.display = "none";
+popup.onclick = () => popup.style.display = "none";
+</script>
+
+</body>
+</html>
