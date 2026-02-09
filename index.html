@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sri Vari Electricals | Constructions & Interior Designing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+    <div class="logo-box">
+        <img src="logo.png" alt="Sri Vari Logo" class="logo">
+        <h1>Sree Vari</h1>
+        <p>Constructions • Electricals • Elevators • Interior Designing</p>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ===== Slideshow Section ===== -->
+
+<section class="slideshow">
+
+    <img class="slide active" src="images/slide2.jpeg">
+    <img class="slide" src="images/slide1.jpeg">
+    <img class="slide" src="images/slide4.jpeg">
+    <img class="slide" src="images/slide3.jpeg">
+    <img class="slide" src="images/slide5.jpeg">
+    <img class="slide" src="images/slide6.jpeg">
+    <img class="slide" src="images/slide7.jpeg">
+
+</section>
+
+
+
+<!-- ========== SERVICES ========== -->
+<section id="services" class="section">
+
+    <h2 class="title">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🏗 Construction Planning</h3>
+            <p>Modern house planning and Architectural design solutions.</p>
+            <p>WE BUILD YOUR DREAM HOME</p>
+            <a href="construction.html" class="card-btn">View Designs →</a>
+
+        </div>
+        <div class="card">
+            <h3>⚡ Electrical Works and Contractor Services</h3>
+            <p>Complete wiring, lighting, and electrical installations for homes and also Complete electrical contractor services including meter installation,BESCOM & chief electrical approvals,reliable power solutions for homes,All residential,commercial and even industrial works will be offered by us</p>
+        </div>
+
+         <div class="card">
+            <h3>🪵 Interior Designing and Wood Works</h3>
+            <p>Crafting Elegant Woodwork That Elevates Every Space.</p>
+            <a href="interior.html" class="card-btn">View Designs →</a>
+        </div>
+        
+        <div class="card">
+            <h3>🛗 Lift Installation</h3>
+            <p>Safe elevator installation and maintenance services for residential & commercial spaces.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about">
+
+    <h2 class="title">About Us</h2>
+
+    <p>
+        Sree Vari Electricals, Constructions ,Elevators , Interior Designing is a trusted service provider
+        delivering safe electrical systems, reliable elevator solutions, and elegant interiors.
+        We focus on quality, safety, and timely project completion for every customer.
+    </p>
+
+</section>
+
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact-box">
+        <p>📞 +91 9341906091</p>
+        <p>📞 +91 8088993444</p>
+        <p>💬 WhatsApp Available</p>
+        <p>📍 #31,Sree Vari mansion, Near Ramada Resort, Honnenahalli, Yelahanka Bangalore 560064</p>
+    </div>
+
+</section>
+
+
+<!-- ========== WHATSAPP FLOAT BUTTON ========== -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
+
+<!-- ========== FOOTER ========== -->
+<footer>
+    © 2026 Sree Vari | All Rights Reserved
+</footer>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000); // change every 3 seconds
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
