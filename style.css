@@ -368,3 +368,18 @@ video::-webkit-media-controls-mute-button {
         background: white;
     }
 }
+.email-center {
+    color: blue;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.email-left {
+    color: blue;
+    display: block;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+}
