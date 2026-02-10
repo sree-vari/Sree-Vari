@@ -383,3 +383,20 @@ video::-webkit-media-controls-mute-button {
     text-decoration: underline;
     white-space: nowrap;
 }
+/* Contact email fixes */
+.contact-box p {
+    width: 100%;
+}
+
+.email-left {
+    text-align: left;
+}
+
+.email-left a {
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;   /* allows horizontal scroll instead of breaking */
+    white-space: nowrap;
+}
