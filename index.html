@@ -163,6 +163,19 @@ function toggleMenu() {
     document.getElementById("navbar").classList.toggle("active");
 }
 </script>
+<script>
+const btn = document.getElementById("whatsappBtn");
+
+const message = "Hello Sree Vari Team, I am interested in your Construction, Electrical, Elevators and Interior services. Please contact me.";
+
+// encode message
+const encodedMsg = encodeURIComponent(message);
+
+// detect mobile
+if (/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)) {
+    btn.href = "https://api.whatsapp.com/send?phone=919341906091&text=" + encodedMsg;
+}
+</script>
 
 </body>
 </html>
